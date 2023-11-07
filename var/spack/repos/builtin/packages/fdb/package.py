@@ -20,6 +20,7 @@ class Fdb(CMakePackage):
     version("master", branch="master")
     version("5.10.8", sha256="6a0db8f98e13c035098dd6ea2d7559f883664cbf9cba8143749539122ac46099")
     version("5.7.8", sha256="6adac23c0d1de54aafb3c663d077b85d0f804724596623b381ff15ea4a835f60")
+    version("remote", branch="remoteFDB", git='https://github.com/ecmwf/fdb.git')
 
     variant("tools", default=True, description="Build the command line tools")
     variant(
@@ -40,7 +41,8 @@ class Fdb(CMakePackage):
     depends_on("cmake@3.12:", type="build")
     depends_on("ecbuild@3.4:", type="build")
 
-    depends_on("eckit@1.16:")
+    depends_on("ecbuild@3.7.2:", type="build", when="@remote")
+    # depends_on("eckit@1.16:")
     depends_on("eckit+admin", when="+tools")
 
     depends_on("eccodes@2.10:")
@@ -52,7 +54,7 @@ class Fdb(CMakePackage):
 
     # Starting version 1.7.0, metkit installs GribHandle.h to another directory.
     # That is accounted for only starting version 5.8.0:
-    patch("metkit_1.7.0.patch", when="@:5.7.10+tools^metkit@1.7.0:")
+    # patch("metkit_1.7.0.patch", when="@:5.7.10+tools^metkit@1.7.0:")
 
     # Download test data before running a test:
     patch(
