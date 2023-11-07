@@ -115,7 +115,7 @@ class Eccodes(CMakePackage):
     depends_on("cmake@3.12:", when="@2.19:", type="build")
 
     depends_on("ecbuild", type="build", when="@develop")
-    depends_on("ecbuild@3.7:", type="build", when="@2.32:")
+    depends_on("ecbuild@3.7.2", type="build", when="@2.32:")
 
     conflicts("+openmp", when="+pthreads", msg="Cannot enable both POSIX threads and OMP")
 
