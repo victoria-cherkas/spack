@@ -48,6 +48,7 @@ class Eckit(CMakePackage):
 
     depends_on("cmake@3.12:", type="build")
     depends_on("ecbuild@3.5:", type="build")
+    depends_on("ecbuild@3.7:", type="build", when="@1.24:")
 
     depends_on("mpi", when="+mpi")
 
