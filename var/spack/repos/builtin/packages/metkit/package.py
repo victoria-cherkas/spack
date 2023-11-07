@@ -27,8 +27,8 @@ class Metkit(CMakePackage):
     depends_on("ecbuild@3.4:", type="build")
 
     depends_on("eckit@1.24:", type="build", when="@1.10.20")
-    depends_on("eckit@1.20.2", type="build")
-    # depends_on("eckit@1.16:")
+    # depends_on("eckit@1.20.2", type="build")
+    depends_on("eckit@1.16:")
 
     depends_on("eccodes@2.5:", when="+grib")
 
