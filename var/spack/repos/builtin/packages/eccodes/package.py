@@ -48,6 +48,7 @@ class Eccodes(CMakePackage):
     maintainers("skosukhin")
 
     version("develop", branch="develop")
+    version("2.32.0", sha256="b57e8eeb0eba0c05d66fda5527c4ffa84b5ab35c46bcbc9a2227142973ccb8e6")
     version("2.25.0", sha256="8975131aac54d406e5457706fd4e6ba46a8cc9c7dd817a41f2aa64ce1193c04e")
     version("2.24.2", sha256="c60ad0fd89e11918ace0d84c01489f21222b11d6cad3ff7495856a0add610403")
     version("2.23.0", sha256="cbdc8532537e9682f1a93ddb03440416b66906a4cc25dec3cbd73940d194bf0c")
@@ -59,7 +60,6 @@ class Eccodes(CMakePackage):
     version("2.13.0", sha256="c5ce1183b5257929fc1f1c8496239e52650707cfab24f4e0e1f1a471135b8272")
     version("2.5.0", sha256="18ab44bc444168fd324d07f7dea94f89e056f5c5cd973e818c8783f952702e4e")
     version("2.2.0", sha256="1a4112196497b8421480e2a0a1164071221e467853486577c4f07627a702f4c3")
-    version('2.32.0', git='https://github.com/ecmwf/eccodes.git')
 
     variant("tools", default=False, description="Build the command line tools")
     variant("netcdf", default=False, description="Enable GRIB to NetCDF conversion tool")
