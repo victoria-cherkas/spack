@@ -15,7 +15,8 @@ class Metkit(CMakePackage):
 
     maintainers("skosukhin")
 
-    version("1.10.20", sh256="903d1b7bef9626c94d05da9618a194b29d7fdd0f1787a34d90eb14bd4c9f0e9c")
+    version("1.11.0", sha256="6c70c81784f54724f2ea7e438cd6ff3ad3cfdc53f6b38e17c53faa3df6b1c31b")
+    version("1.10.20", sha256="903d1b7bef9626c94d05da9618a194b29d7fdd0f1787a34d90eb14bd4c9f0e9c")
     version("1.9.2", sha256="35d5f67196197cc06e5c2afc6d1354981e7c85a441df79a2fbd774e0c343b0b4")
     version("1.7.0", sha256="8c34f6d8ea5381bd1bcfb22462349d03e1592e67d8137e76b3cecf134a9d338c")
 
