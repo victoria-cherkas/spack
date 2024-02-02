@@ -18,6 +18,7 @@ class Fdb(CMakePackage):
 
     # master version of fdb is subject to frequent changes and is to be used experimentally.
     version("master", branch="master")
+    version("5.11.99", sha256="1daae87ccb78cc8ae721c125d52ec77f014a5ff85a98cd2ce53f8716f109af4f")
     version("5.11.94", sha256="d933c5ef7122e3246c1875b0ce41116d79dd8e2151a4df108aa81416ac169fc0")
     version("5.11.92", sha256="85f1d7f8f54fbab1401f9e8384fb4ff3e26d5dccced4fd4cd304cc3d512c333d")
     version("5.11.90", sha256="a1a0f07c9a0009502556a5525f4869def7261c959361d2a392e17d46f5c47ebd")

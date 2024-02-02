@@ -18,6 +18,7 @@ class Eckit(CMakePackage):
 
     maintainers("skosukhin", "climbfuji")
 
+    version('1.25.2', sha256="a611d26d50a9f2133b75100567a890eb0e0a48a96669b8c8475baf9d6f359397")
     version('1.25.0', sha256="eb34f9b188c3044fc67f3bc9d020f4847939756ac24f3e5208b6e62c015f9b23")
     version('1.24.6', sha256="0bb6ca7140c8b375c6a1dcce1f520e01e554b3cbd1acbee431d676d27ca74586")
     version('1.24.5', sha256="2fd74e04c20a59f9e13635828d9da880e18f8a2cb7fd3bfd0201e07071d6ec41")

@@ -41,13 +41,15 @@ class Eccodes(CMakePackage):
     data in GRIB (1/2), BUFR (3/4) and GTS header formats."""
 
     homepage = "https://software.ecmwf.int/wiki/display/ECC/ecCodes+Home"
-    url = "https://confluence.ecmwf.int/download/attachments/45757960/eccodes-2.2.0-Source.tar.gz?api=v2"
+    # url = "https://confluence.ecmwf.int/download/attachments/45757960/eccodes-2.2.0-Source.tar.gz?api=v2"
+    url = "https://github.com/ecmwf/eccodes/archive/refs/tags/2.2.0.tar.gz"
     git = "https://github.com/ecmwf/eccodes.git"
     list_url = "https://confluence.ecmwf.int/display/ECC/Releases"
 
     maintainers("skosukhin")
 
     version("develop", branch="develop")
+    version("2.33.2", sha256="a46aa45f5eed0bf70e1e10ebaf28e057027778eebc0121fecd2d47cd68fbbf10")
     version("2.32.0", sha256="b57e8eeb0eba0c05d66fda5527c4ffa84b5ab35c46bcbc9a2227142973ccb8e6")
     version("2.25.0", sha256="8975131aac54d406e5457706fd4e6ba46a8cc9c7dd817a41f2aa64ce1193c04e")
     version("2.24.2", sha256="c60ad0fd89e11918ace0d84c01489f21222b11d6cad3ff7495856a0add610403")
